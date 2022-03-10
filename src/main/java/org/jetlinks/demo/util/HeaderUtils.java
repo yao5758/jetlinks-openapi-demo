@@ -1,4 +1,4 @@
-package org.jetlinks.demo.openapi;
+package org.jetlinks.demo.util;
 
 import org.apache.commons.codec.binary.Hex;
 import org.apache.commons.codec.digest.DigestUtils;
@@ -48,7 +48,7 @@ public class HeaderUtils {
     }
 
 
-    static Map<String, String> createHeadersOfJsonString(String jsonString) {
+    public static Map<String, String> createHeadersOfJsonString(String jsonString) {
         //时间戳
         String xTimestamp = String.valueOf(new Date().getTime());
         //openApi客户端id
